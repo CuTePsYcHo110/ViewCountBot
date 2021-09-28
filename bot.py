@@ -1,6 +1,5 @@
 # (c) 2021-22 < @xditya >
  # < @BotzHub >
-
  import logging
  import asyncio
  from telethon import TelegramClient, events, Button
@@ -27,8 +26,8 @@
      ok = await BotzHub(GetFullUserRequest(event.sender_id))
      await event.reply(f"Hello {ok.user.first_name}! \nI'm a view-counter bot.\nSend me a message and I'll attach a view count to it!",
                      buttons=[
-                         [Button.url("Dev.", url="https://t.me/CuTePsYcHo_110"),
-                         Button.url("Repository", url="https://github.com/CuTePsYcHo110/ViewCountBot")]
+                         [Button.url("Dev.", url="https://t.me/BotzHub"),
+                         Button.url("Repository", url="https://github.com/xditya/ViewCountBot")]
                      ])
 
  @BotzHub.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
@@ -39,5 +38,5 @@
      await x.forward_to(event.chat_id)
 
  print("Bot has started.")
- print("Do visit @CrAzIe_BoTz")
+ print("Do visit @BotzHub..")
  BotzHub.run_until_disconnected() 
