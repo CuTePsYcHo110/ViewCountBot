@@ -16,7 +16,7 @@ try:
     bottoken = config("BOT_TOKEN")
     FRWD_CHANNEL = config("FRWD_CHANNEL", cast=int)
     BotzHub = TelegramClient('BotzHub', apiid, apihash).start(bot_token=bottoken)
-    except:
+     except:
      print("Environment vars are missing! Kindly recheck.")
      print("Bot is quiting...")
      exit()
