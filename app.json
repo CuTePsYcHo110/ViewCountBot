@@ -1,7 +1,7 @@
 {
      "name": "View Count Bot",
      "description": "Telethon bot to add view counts to a message.",
-     "logo": "",
+     "logo": "https://telegra.ph/file/7d185948340f3105b44e1.jpg",
      "keywords": [
          "telegram",
          "telethon",
