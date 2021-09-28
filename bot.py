@@ -27,8 +27,8 @@ async def _(event):
     ok = await BotzHub(GetFullUserRequest(event.sender_id))
     await event.reply(f"Hello {ok.user.first_name}! \nI'm a view-counter bot.\nSend me a message and I'll attach a view count to it!",
                     buttons=[
-                        [Button.url("Dev.", url="https://t.me/BotzHub"),
-                        Button.url("Repository", url="https://github.com/xditya/ViewCountBot")]
+                        [Button.url("Dev.", url="https://t.me/CrAzIe_BoTz"),
+                        Button.url("Repository", url="https://github.com/CuTePsYcHo_110/ViewCountBot_Telegram")]
                     ])
 
 @BotzHub.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
@@ -39,5 +39,5 @@ async def countit(event):
     await x.forward_to(event.chat_id)
 
 print("Bot has started.")
-print("Do visit @BotzHub..")
+print("Do visit @CrAzIe_BoTz")
 BotzHub.run_until_disconnected()
